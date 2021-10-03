@@ -1,0 +1,13 @@
+%h2 All Review #{@movie.title}
+
+
+
+
+
+
+-if @moviegoer_reviews
+  = link_to 'Show Review', movie_review_path(@movie, :id)
+-else
+  = link_to 'Add Review', new_movie_review_path(@movie)
+%div
+= link_to 'Back to Movie Details', movie_path(@movie)

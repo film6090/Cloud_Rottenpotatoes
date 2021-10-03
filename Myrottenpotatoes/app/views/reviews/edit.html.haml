@@ -1,0 +1,11 @@
+%h2 Update Review for #{@movie.title}
+
+= form_tag movie_review_path(@movie), :method => :put do
+  
+  = render :partial => 'movie_review_form'
+  
+  %h3
+  = submit_tag 'Update Review'
+%h3
+= link_to 'Cancel' , movie_review_path(@movie)
+

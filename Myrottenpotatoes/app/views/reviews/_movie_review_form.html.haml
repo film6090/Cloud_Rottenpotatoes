@@ -1,0 +1,6 @@
+= label :review, :potatoes, 'How many potatoes:'
+= select :review, :potatoes, Review.all_ratings
+
+= label :review, :comments, 'Comment'
+= text_area :review, :comments, size: "27x7"
+
